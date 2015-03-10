@@ -19,7 +19,7 @@ functor Make(M : sig
 				(fn row => children <- renderChildren row.Tab.Id;
 				    return <xml>
 				      <li>
-					{[row.Tab.Value]}
+                                        {[row.Tab.Id]}:{[row.Tab.Value]}
 					{children}
 				      </li>
 				    </xml>);
